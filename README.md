@@ -8,4 +8,10 @@ given by
 
 
 
-The file required is VASP-DOSCAR file. The code automatically ready 
+The file required is VASP-DOSCAR file.
+use LORBIT = 11 in the DOS calculation
+To use the code:
+1. Go to src directory
+2. Please check the FC= in the Makefile
+3. Type make
+4. Run the executable DOSutility from where you have the DOSCAR file.
