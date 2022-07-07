@@ -9,8 +9,9 @@ given by
 
 
 The file required is VASP-DOSCAR file.
-use LORBIT = 11 in the DOS calculation
-To use the code:
+use LORBIT = 11 in the DOS calculation.
+
+**To use the code:**
 1. Go to src directory
 2. Please check the FC= in the Makefile
 3. Type make
