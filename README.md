@@ -1,4 +1,4 @@
-# d-band-center
+# d-band-center Program
 This code calculates the d-band centers (spin up and spin down) from a VASP calculation with LORBIT=11 and prints the _effective d-band center_
 given by
 
