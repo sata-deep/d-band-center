@@ -8,4 +8,4 @@ given by
 
 
 
-The file required is VASP-DOSCAR file.
+The file required is VASP-DOSCAR file. The code automatically ready 
