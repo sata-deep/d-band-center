@@ -1,0 +1,60 @@
+	subroutine doscalculator_nsp 
+!       d-dos are in the following order
+!       dxy,dyz,dz2,dxz,dx2 
+!
+!                  Satadeep Bhattacharjee
+!   =================================================
+        USE module
+        implicit none
+        
+!
+        if(iinput==1)goto 100
+        if(iinput==2)goto 200
+        if(iinput==3)goto 250
+100     open(40,file='d-ud.dat') 
+        do ie=1,NE
+        dosu(ie)=0.0
+        dosd(ie)=0.0
+        do i=n1,n2
+      dosu(ie)=dosu(ie)+dxy_u(i,ie)+dyz_u(i,ie)+dz2_u(i,ie)+dxz_u(i,ie)&
+          +dx2_u(i,ie)
+        enddo
+        write(40,*)e(ie),0.5*dosu(ie),-0.5*dosu(ie)
+        enddo
+        close(40)
+        call moment(dosu)
+        write(*,*)'The d-band center is ',mom-efermi,'eV'
+        write(*,*)"----------------------------------------------"
+        call width(dosu)
+        write(*,*)'The d-band width is ',w,'eV'
+        goto 300
+!
+250     open(50,file='p-ud.dat') 
+        do ie=1,NE
+        dosu(ie)=0.0
+        dosd(ie)=0.0
+        do i=n1,n2
+        dosu(ie)=dosu(ie)+px_u(i,ie)+py_u(i,ie)+pz_u(i,ie)
+        enddo
+        write(50,*)e(ie),dosu(ie)/2.0,-dosu(ie)/2.0
+        enddo
+        close(50)
+        call moment(dosu)
+        write(*,*)'The p-band center is ',mom-efermi,'eV'
+        call width(dosu)
+        write(*,*)'The p-band width for the spin-up is ',w,'eV'
+        write(*,*)"----------------------------------------------"
+        goto 300
+200	open(50,file='Atom-d.dat')
+        write(*,*)'which atom'
+        read(*,*)atom_number
+        j=atom_number
+!
+        do ie=1,NE
+        write(50,'(6f8.4)')e(ie),dxy_u(j,ie),dyz_u(j,ie),&
+             dz2_u(j,ie),dxz_u(j,ie),dx2_u(j,ie)
+        enddo
+        close(50)
+300     Write(*,*)'==========JOB DONE================================='
+!
+	end subroutine
