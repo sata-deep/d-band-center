@@ -21,6 +21,8 @@ Use Total d-DOS option (1) to print the d-band centers. Once the atoms are selec
 d-DOS for the up and down electrons for the selected atoms in a file called **d-ud.dat** (in addition to printing the d-band centers 
 of those selected atoms). 
 
+While performing DOS calculation care should be taken (in the POSCAR file) such that all transition metals for which the d-band center 
+to be calculated should appear together.
 
 If you use this code, please cite the following article:
 
