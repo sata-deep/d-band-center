@@ -20,3 +20,6 @@ use LORBIT = 11 in the DOS calculation.
 Use Total d-DOS option (1) to print the d-band centers. Once the atoms are selected the code prints the 
 d-DOS for the up and down electrons for the selected atoms in a file called **d-ud.dat** (in addition to printing the d-band centers 
 of those selected atoms). 
+If you use this code, please cite the following article:
+
+**Bhattacharjee, S.**, Waghmare, U. & Lee, SC. An improved d-band model of the catalytic activity of magnetic transition metal surfaces. Sci Rep 6, 35916 (2016). https://doi.org/10.1038/srep35916
