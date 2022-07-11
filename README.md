@@ -7,6 +7,7 @@ given by
 
 
 
+Here $f_\uparrow$ is
 
 The file required is VASP-DOSCAR file.
 use LORBIT = 11 in the DOS calculation.
