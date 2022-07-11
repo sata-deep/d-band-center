@@ -17,7 +17,7 @@ use LORBIT = 11 in the DOS calculation.
 
 **To use the code:**
 1. Go to src directory
-2. Please check the FC= in the Makefile
+2. Please check the "FC=" in the Makefile (ifort/gfortran)
 3. Type make
 4. Run the executable DOSutility from where you have the DOSCAR file.
 
