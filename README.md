@@ -1,7 +1,5 @@
 # d-band-center Program
-@settings {
-  font-size: 75;
-}
+
 This code calculates the d-band centers (spin up and spin down) from a VASP calculation with LORBIT=11 and prints the _effective d-band center_
 given by
 
@@ -10,7 +8,7 @@ given by
 
 
 
-Here $f_\uparrow$ and $f_\downarrow$ are the fractional occupancy of the d-states. 
+Here $f_\uparrow$ and $f_\downarrow$ are the fractional occupancy of the d-states. $\varepsilon_{d\uparrow$}$ and $\varepsilon_{d\downarrow$}$ are the d-band centers for the spin-up band and spin-down band respectively.
 
 The file required is VASP-DOSCAR file.
 use LORBIT = 11 in the DOS calculation.
