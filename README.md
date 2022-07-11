@@ -31,3 +31,7 @@ to be calculated should appear together.
 If you use this code, please cite the following article:
 
 **Bhattacharjee, S.**, Waghmare, U. & Lee, SC. An improved d-band model of the catalytic activity of magnetic transition metal surfaces. Sci Rep 6, 35916 (2016). https://doi.org/10.1038/srep35916
+
+Other than the above, the code can also print the spin-polarization at the Fermi energy
+
+$P=\frac{D_\uparrow(E_F)-D_\downarrow(E_F)}{D_\uparrow(E_F)+D_\downarrow(E_F)}$
