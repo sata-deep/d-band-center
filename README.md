@@ -7,7 +7,7 @@ given by
 
 
 
-Here $f_\uparrow$ is
+Here $f_\uparrow$ and $f_\downarrow$ are the fractional occupancy of the d-states. 
 
 The file required is VASP-DOSCAR file.
 use LORBIT = 11 in the DOS calculation.
