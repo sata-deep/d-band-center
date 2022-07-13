@@ -9,7 +9,7 @@
         
 !
         tolerance=0.05
-        write(*,*)'Enter LORBIT (if /= 11 thr program will stop)'
+        write(*,*)'Enter LORBIT (if /= 11 then program will stop)'
         read(*,*)LORBIT
 	open(10,file='DOSCAR',form = 'formatted')
         read(10,*)natom,natom,q1,q2
