@@ -8,9 +8,9 @@ given by
 
 
 
-Here $f_\uparrow$ and $f_\downarrow$ are the fractional occupancy of the d-states. 
+Here $f_\uparrow$ and $f_\downarrow$ are the fractional occupancy of the d-states (The code will calculate them from the DOSCAR file)
 
-$\epsilon_{d\uparrow}$ and $\epsilon_{d\downarrow}$ are the d-band center for the spin-up band and spin-down band respectively.
+$\epsilon_{d\uparrow}$ and $\epsilon_{d\downarrow}$ are the d-band center for the spin-up band and spin-down band respectively. 
 
 The file required is VASP-DOSCAR file.
 use LORBIT = 11 in the DOS calculation.
