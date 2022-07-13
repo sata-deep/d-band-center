@@ -21,7 +21,22 @@ use LORBIT = 11 in the DOS calculation.
 3. Type make
 4. Run the executable DOSutility from where you have the DOSCAR file.
 
-Use Total d-DOS option (1) to print the d-band centers. Once the atoms are selected the code prints the 
+Use Total d-DOS option (1) to print the d-band centers. The code will ask the range of the atoms. For example if you want the d-band centers for 
+the Co-atoms in Fe2CoO4, in the structure:
+**
+Fe16 Co8 O32
+1.0
+8.563292 0.000000 0.000000
+0.000000 8.563292 0.000000
+0.000000 0.000000 8.563292
+Fe Co O
+16 8 32
+direct
+**
+use the range: 
+**17 24**
+
+Once the atoms are selected the code prints the 
 d-DOS for the up and down electrons for the selected atoms in a file called **d-ud.dat** (in addition to printing the d-band centers 
 of those selected atoms). 
 
