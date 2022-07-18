@@ -5,14 +5,15 @@ This code calculates the spin-dependent d-band centers (spin up and spin down) f
 ![image](https://user-images.githubusercontent.com/27854932/177729995-08bfb976-f0b5-4e64-8da7-1e0315cae63a.png)
 
 
-The code  also prints the standard Hammer-Norskov d band center:
-
-
-$\varepsilon_d=\frac{\int \varepsilon D(\varepsilon)d\varepsilon}{\int D(\varepsilon)d\varepsilon}$
 
 Here $f_\uparrow$ and $f_\downarrow$ are the fractional occupancy of the d-states (The code will calculate them from the DOSCAR file)
 
 $\epsilon_{d\uparrow}$ and $\epsilon_{d\downarrow}$ are the d-band center for the spin-up band and spin-down band respectively. 
+
+The code  also prints the standard Hammer-Norskov d band center:
+
+$\varepsilon_d=\frac{\int \varepsilon D(\varepsilon)d\varepsilon}{\int D(\varepsilon)d\varepsilon}$
+
 
 The file required is VASP-DOSCAR file.
 use LORBIT = 11 in the DOS calculation.
