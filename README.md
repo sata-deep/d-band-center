@@ -2,11 +2,14 @@
 
 This code calculates the spin-dependent d-band centers (spin up and spin down) from a VASP calculation with LORBIT=11 and prints the _effective d-band center_ given by
 
-![image](https://user-images.githubusercontent.com/27854932/177729995-08bfb976-f0b5-4e64-8da7-1e0315cae63a.png)
+
+![image](https://user-images.githubusercontent.com/27854932/179454521-10cbb1a4-b1b9-4b59-91a5-07545351fdd5.png)
 
 
 
-Here $f_\uparrow$ and $f_\downarrow$ are the fractional occupancy of the d-states (The code will calculate them from the DOSCAR file)
+Here $f_\uparrow$ and $f_\downarrow$ are the fractional occupancy of the d-states (The code will calculate them from the DOSCAR file).
+
+$\mu=\frac{f_\uparrow-f_\downarrow}{f_\uparrow+f_\downarrow}} is the fractional occupation.
 
 $\epsilon_{d\uparrow}$ and $\epsilon_{d\downarrow}$ are the d-band center for the spin-up band and spin-down band respectively. 
 
