@@ -8,7 +8,7 @@ This code calculates the spin-dependent d-band centers (spin up and spin down) f
 The code  also prints the standard Hammer-Norskov d band center:
 
 
-\varepsilon_d=\frac{\int \varepsilon D(\varepsilon)d\varepsilon}{\int D(\varepsilon)d\varepsilon}
+$\varepsilon_d=\frac{\int \varepsilon D(\varepsilon)d\varepsilon}{\int D(\varepsilon)d\varepsilon}$
 
 Here $f_\uparrow$ and $f_\downarrow$ are the fractional occupancy of the d-states (The code will calculate them from the DOSCAR file)
 
