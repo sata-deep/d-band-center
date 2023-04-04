@@ -46,6 +46,7 @@
         num1(ie)=e(ie)*dosu(ie)
         num2(ie)=e(ie)*dosd(ie)
         num3(ie)=e(ie)*(dosu(ie)+dosd(ie))
+        num4(ie)=(dosu(ie)+dosd(ie))
         enddo
         call davint(e,num1,ne,e(1),0,ans,IERR)
         anum1=ans
@@ -69,10 +70,12 @@
         momav=(fup*momu+(fdn*momd))/(fup+fdn)
         momav=momav-((momd-momu)*((fup-fdn)/(fup+fdn)))
         call davint(e,num3,ne,e(1),0,ans,IERR)
-        dHN=ans/(aden1+aden2)
+        dHNn=ans
+        call davint(e,num4,ne,e(1),0,ans,IERR)
+        dHNd=ans
         write(*,*)"                                         "
         write(*,'("The effective band center: ",f7.3," eV")')momav
-        write(*,'("The standard Hammer-Norskov band center: ",f7.3," eV")')dHN
+        write(*,'("The standard Hammer-Norskov band center: ",f7.3," eV")')dHNn/dHNd
         print*,"========================================"
 
         goto 300

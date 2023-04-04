@@ -6,8 +6,8 @@
         integer::indf,ip1,ip2,nat,yy
         integer::ip(10)
         double precision:: ans,negu,negd,ds,ex,tolerance
-        double precision::gapU,gapD,eup,momu,momd,fup,fdn 
-        double precision::aden,anum,momav 
+        double precision::gapU,gapD,eup,momu,momd,fup,fdn,dHNd 
+        double precision::aden,anum,anum1,anum2,momav,aden1,aden2,dHNn 
         character*10 ::filename
         double precision :: e(5000),DUP(5000),DOW(5000)
         double precision ::s_u(100,5000),s_d(100,5000)
@@ -17,9 +17,9 @@
         double precision::dz2_u(100,5000)
 	double precision::dxz_u(100,5000),dx2_u(100,5000)
 	double precision::dxy_d(100,5000),dyz_d(100,5000),dz2_d(100,5000)
-	double precision::dxz_d(100,5000),dx2_d(100,5000)
+	double precision::dxz_d(100,5000),dx2_d(100,5000),num4(5000)
         double precision :: dosu(5000),dosd(5000),num1(5000),num2(5000),emin,emax,efermi
-        double precision :: dosueg(5000),dosdeg(5000)
+        double precision :: dosueg(5000),num3(5000),dosdeg(5000)
         double precision :: dospu(5000),dospd(5000),dosp(5000)
         double precision :: egu(5000),egd(5000),t2gu(5000),t2gd(5000)
         double precision ::dummy(5000,5),mom,as1,as2,a,b,delta,sum1,sum2
